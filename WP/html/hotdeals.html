@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ưu Đãi Hot - Travel Planner</title>
+
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/hotdeals.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo"><a href="index.html">Travel<span>Planner</span></a></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="tours.html">Tour</a></li>
+                <li><a href="hotdeals.html" class="active">Ưu đãi hot</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1>ƯU ĐÃI HOT</h1>
+        <p>Khám phá những tour giảm giá cực sốc đang diễn ra!</p>
+    </div>
+</section>
+
+<!-- Filter -->
+<div class="filter-section" data-aos="fade-up">
+    <button class="filter-btn active" data-category="all">Tất cả</button>
+    <button class="filter-btn" data-category="domestic">Tour trong nước</button>
+    <button class="filter-btn" data-category="international">Tour quốc tế</button>
+</div>
+
+<!-- Deals -->
+<section class="container deal-grid">
+
+    <div class="deal-card" data-category="domestic" data-aos="fade-up">
+        <img src="../assets/images/deal1.jpg" alt="Đà Lạt">
+        <div class="deal-info">
+            <h3>Tour Đà Lạt 3N2Đ</h3>
+            <p>Giảm giá 20% cho nhóm từ 4 người trở lên.</p>
+            <a href="toursdetails.html" class="btn">Xem chi tiết</a>
+        </div>
+    </div>
+
+    <div class="deal-card" data-category="international" data-aos="fade-up" data-aos-delay="100">
+        <img src="../assets/images/deal2.jpg" alt="Singapore">
+        <div class="deal-info">
+            <h3>Tour Singapore 4N3Đ</h3>
+            <p>Miễn phí vé tham quan Universal Studios!</p>
+            <a href="toursdetails.html" class="btn">Xem chi tiết</a>
+        </div>
+    </div>
+
+    <div class="deal-card" data-category="domestic" data-aos="fade-up" data-aos-delay="200">
+        <img src="../assets/images/deal3.jpg" alt="Phú Quốc">
+        <div class="deal-info">
+            <h3>Tour Phú Quốc 3N2Đ</h3>
+            <p>Tặng vé VinWonders khi đặt tour trong tháng này.</p>
+            <a href="toursdetails.html" class="btn">Xem chi tiết</a>
+        </div>
+    </div>
+
+    <div class="deal-card" data-category="international" data-aos="fade-up" data-aos-delay="300">
+        <img src="../assets/images/deal4.jpg" alt="Thái Lan">
+        <div class="deal-info">
+            <h3>Tour Thái Lan 5N4Đ</h3>
+            <p>Giảm ngay 1.000.000₫ khi thanh toán online!</p>
+            <a href="toursdetails.html" class="btn">Xem chi tiết</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Travel Planner. Tất cả quyền được bảo lưu.</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="../assets/js/hotdeals.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+
+    $('.filter-btn').on('click', function() {
+        const category = $(this).data('category');
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        if (category === 'all') {
+            $('.deal-card').fadeIn(400);
+        } else {
+            $('.deal-card').fadeOut(400);
+            $(`.deal-card[data-category="${category}"]`).fadeIn(400);
+        }
+    });
+</script>
+</body>
+</html>
