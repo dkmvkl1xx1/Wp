@@ -5,18 +5,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>VietTravel - VietTravel</title>
+    <title>Home - VietTravel</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <link rel="stylesheet" href="../html/assets/client/css/base.css">
-    <link rel="stylesheet" href="../html/assets/client/css/header.css">
-    <link rel="stylesheet" href="../html/assets/client/css/footer.css">
-    <link rel="stylesheet" href="../html/assets/client/css/home.css">
-    <link rel="stylesheet" href="../html/assets/client/css/responsive.css">
+    <link rel="stylesheet" href="/assets/client/css/base.css">
+    <link rel="stylesheet" href="/assets/client/css/header.css">
+    <link rel="stylesheet" href="/assets/client/css/footer.css">
+    <link rel="stylesheet" href="/assets/client/css/home.css">
+    <link rel="stylesheet" href="/assets/client/css/responsive.css">
 
     <!-- AOS for scroll animations -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -49,9 +49,9 @@
                 <div class="user-auth">
                     <!-- Khi chưa đăng nhập -->
                     <div class="guest-menu">
-                        <a href="login.html"><i class="fas fa-user"></i> Đăng nhập</a>
+                        <a href="clients/login.html"><i class="fas fa-user"></i> Đăng nhập</a>
                         <span class="divider">|</span>
-                        <a href="register.html">Đăng ký</a>
+                        <a href="clients/register.html">Đăng ký</a>
                     </div>
 
                     <!-- Khi đã đăng nhập (ẩn mặc định) -->
@@ -63,12 +63,13 @@
                                 <i class="fas fa-chevron-down"></i>
                             </button>
                             <div class="dropdown-menu">
-                                <a href="profile.html"><i class="fas fa-user-circle"></i> Tài khoản của tôi</a>
-                                <a href="my-bookings.html"><i class="fas fa-ticket-alt"></i> Đơn đặt tour</a>
+                                <a href="clients/profile.html"><i class="fas fa-user-circle"></i> Tài khoản của tôi</a>
+                                <a href="clients/my-bookings.html"><i class="fas fa-ticket-alt"></i> Đơn đặt tour</a>
                                 <a href="favorites.html"><i class="fas fa-heart"></i> Yêu thích</a>
                                 <a href="wallet.html"><i class="fas fa-wallet"></i> Ví của tôi</a>
                                 <hr>
-                                <a href="login.html" class="logout-link"><i class="fas fa-sign-out-alt"></i> Đăng
+                                <a href="clients/login.html" class="logout-link"><i class="fas fa-sign-out-alt"></i>
+                                    Đăng
                                     xuất</a>
                             </div>
                         </div>
@@ -92,7 +93,7 @@
 
             <!-- Search Box (Quan trọng cho e-commerce) -->
             <div class="search-box highlight">
-                <form action="search.html" method="GET" class="search-form">
+                <form action="clients/search.html" method="GET" class="search-form">
                     <div class="search-input-wrapper">
                         <i class="fas fa-search"></i>
 
@@ -142,7 +143,7 @@
                 </div>
 
                 <!-- Cart/Booking (Giỏ tour) -->
-                <a href="cart.html" class="header-icon cart-icon" title="Giỏ tour">
+                <a href="clients/cart.html" class="header-icon cart-icon" title="Giỏ tour">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="badge">2</span>
                     <span class="cart-text">Giỏ tour</span>
@@ -164,7 +165,7 @@
 
                 <!-- Mega Menu cho Tour -->
                 <li class="has-mega-menu">
-                    <a href="tours.html">
+                    <a href="clients/tours.html">
                         <i class="fas fa-map-marked-alt"></i> Tour du lịch
                         <i class="fas fa-chevron-down"></i>
                     </a>
@@ -207,10 +208,10 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="deals.html"><i class="fas fa-fire"></i> Ưu đãi hot</a></li>
-                <li><a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> Liên hệ</a></li>
-                <li><a href="reviews.html"><i class="fas fa-star"></i> Đánh giá</a></li>
+                <li><a href="clients/deals.html"><i class="fas fa-fire"></i> Ưu đãi hot</a></li>
+                <li><a href="clients/blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                <li><a href="clients/contact.html"><i class="fas fa-phone"></i> Liên hệ</a></li>
+                <li><a href="clients/reviews.html"><i class="fas fa-star"></i> Đánh giá</a></li>
             </ul>
             <!-- Quick links bên phải -->
             <div class="nav-right">
@@ -247,7 +248,7 @@
                         khám phá vẻ đẹp của Việt Nam – từ những bãi biển trong xanh đến núi rừng hùng vĩ
                         và di sản văn hóa đặc sắc.
                     </p>
-                    <a href="about.html" class="btn">Xem thêm</a>
+                    <a href="clients/about.html" class="btn">Xem thêm</a>
                 </div>
             </div>
         </div>
@@ -453,8 +454,9 @@
                     <ul class="footer-links">
                         <li><a href="#"><i class="fas fa-angle-right"></i> Hướng dẫn đặt tour</a></li>
                         <li><a href="#"><i class="fas fa-angle-right"></i> Phương thức thanh toán</a></li>
-                        <li><a href="faq.html"><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a></li>
-                        <li><a href="policy.html"><i class="fas fa-angle-right"></i> Điều khoản & Chính sách bảo mật
+                        <li><a href="clients/faq.html"><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a></li>
+                        <li><a href="clients/policy.html"><i class="fas fa-angle-right"></i> Điều khoản & Chính sách bảo
+                            mật
                         </a></li>
 
                     </ul>
